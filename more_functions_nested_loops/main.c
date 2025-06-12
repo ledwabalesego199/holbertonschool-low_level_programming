@@ -1,18 +1,14 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code for print_square
  *
- * Description: Test print_diagonal function with various inputs.
- *
- * Return: Always 0 (success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	print_diagonal(0);
-	print_diagonal(3);
-	print_diagonal(7);
-	print_diagonal(-1);
-
+	print_square(0);
+	print_square(2);
+	print_square(5);
 	return (0);
 }
