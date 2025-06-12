@@ -1,17 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the puts_half function
+ * main - check the print_array function
  *
  * Return: 0
  */
 int main(void)
 {
-	char *str1 = "0123456789";
-	char *str2 = "012345678";
-
-	puts_half(str1); /* should print: 56789 */
-	puts_half(str2); /* should print: 45678 */
-
+	int arr[] = {0, 1, 2, 3, 4, 98, 1024, 402, 4096};
+	print_array(arr, 9);
+	print_array(arr, 5);
 	return (0);
 }
