@@ -2,18 +2,18 @@
 #include "main.h"
 
 /**
- * main - check the code for _strcpy
+ * main - check the _strcpy function
  *
- * Return: 0
+ * Return: 0 on success
  */
 int main(void)
 {
-    char src[] = "Hello, Holberton!";
-    char dest[20];
+	char src[] = "Hello, Holberton!";
+	char dest[20];
 
-    printf("Before copy: %s\n", dest);
-    _strcpy(dest, src);
-    printf("After copy: %s\n", dest);
+	printf("Before copy: %s\n", dest);
+	_strcpy(dest, src);
+	printf("After copy: %s\n", dest);
 
-    return (0);
+	return (0);
 }
