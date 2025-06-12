@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - check the code for puts2
+ * main - test puts_half
  *
  * Return: Always 0
  */
 int main(void)
 {
-	char *str = "0123456789";
-	puts2(str);
-	return (0);
+    char *str = "0123456789";
+    puts_half(str);
+    return (0);
 }
