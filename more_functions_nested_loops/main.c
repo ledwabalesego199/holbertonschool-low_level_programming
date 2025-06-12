@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code for print_square
+ * main - Test the print_triangle function
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-	print_square(0);
-	print_square(2);
-	print_square(5);
+	print_triangle(0);
+	print_triangle(1);
+	print_triangle(5);
 	return (0);
 }
