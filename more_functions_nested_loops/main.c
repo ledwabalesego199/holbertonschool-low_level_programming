@@ -1,12 +1,10 @@
-#include <stdio.h>
-
-int _isdigit(int c); // Function prototype
+#include "main.h"
 
 int main(void)
 {
-	printf("%d\n", _isdigit('5'));  // Should print 1
-	printf("%d\n", _isdigit('a'));  // Should print 0
-	printf("%d\n", _isdigit('9'));  // Should print 1
-	printf("%d\n", _isdigit('*'));  // Should print 0
-	return 0;
+    print_diagonal(0);
+    print_diagonal(3);
+    print_diagonal(7);
+    print_diagonal(-1);
+    return (0);
 }
