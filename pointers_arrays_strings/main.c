@@ -1,13 +1,17 @@
 #include "main.h"
 
 /**
- * main - test puts_half
+ * main - check the puts_half function
  *
- * Return: Always 0
+ * Return: 0
  */
 int main(void)
 {
-    char *str = "0123456789";
-    puts_half(str);
-    return (0);
+	char *str1 = "0123456789";
+	char *str2 = "012345678";
+
+	puts_half(str1); /* should print: 56789 */
+	puts_half(str2); /* should print: 45678 */
+
+	return (0);
 }
