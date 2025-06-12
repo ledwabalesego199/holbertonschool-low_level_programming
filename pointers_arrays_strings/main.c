@@ -1,14 +1,19 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the print_array function
+ * main - check the code for _strcpy
  *
  * Return: 0
  */
 int main(void)
 {
-	int arr[] = {0, 1, 2, 3, 4, 98, 1024, 402, 4096};
-	print_array(arr, 9);
-	print_array(arr, 5);
-	return (0);
+    char src[] = "Hello, Holberton!";
+    char dest[20];
+
+    printf("Before copy: %s\n", dest);
+    _strcpy(dest, src);
+    printf("After copy: %s\n", dest);
+
+    return (0);
 }
