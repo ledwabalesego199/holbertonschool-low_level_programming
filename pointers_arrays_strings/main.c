@@ -1,13 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 
+/**
+ * main - test print_diagsums function
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-    char dest[100] = "Hello, ";
-    char src[] = "World!";
+	int matrix[3][3] = {
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9}
+	};
 
-    _strcat(dest, src);
-    printf("%s\n", dest);
+	print_diagsums((int *)matrix, 3);
 
-    return 0;
+	return (0);
 }
