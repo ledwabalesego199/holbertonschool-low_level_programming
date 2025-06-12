@@ -4,3 +4,4 @@
 int _atoi(char *s);
 
 #endif /* MAIN_H */
+int _strlen_recursion(char *s);
