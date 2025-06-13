@@ -2,27 +2,26 @@
 #define DOG_H
 
 /**
- * struct dog - Structure that defines a dog
- * @name: Pointer to the name of the dog
- * @age: Age of the dog (float)
- * @owner: Pointer to the owner's name
+ * struct dog - structure for a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Description: A structure that holds basic information about a dog.
+ * Description: This struct stores basic information about a dog.
  */
 struct dog
 {
-	char *name;
-	float age;
-	char *owner;
+    char *name;
+    float age;
+    char *owner;
 };
 
 /**
- * print_dog - Prints a struct dog
- * @d: Pointer to the struct dog to print
- *
- * Description: Prints the fields of a dog structure. If any element
- * is NULL, it prints (nil) instead. If d is NULL, it prints nothing.
+ * dog_t - new name for the type struct dog
  */
-void print_dog(struct dog *d);
+typedef struct dog dog_t;
+
+/* Function prototype */
+void init_dog(dog_t *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
